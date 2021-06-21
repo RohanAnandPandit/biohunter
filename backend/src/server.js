@@ -1,4 +1,4 @@
-import Database from "./database";
+const Database = require( "./database");
 
 const path = require('path');
 const express = require('express');
