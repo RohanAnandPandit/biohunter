@@ -1,4 +1,4 @@
-import { QueryFile } from "pg-promise";
+import { QueryFile } = require("pg-promise");
 import path from "path";
 
 function sql(filename) {
@@ -6,12 +6,12 @@ function sql(filename) {
   return new QueryFile(sqlPath, { minify: true });
 }
 
-export const userSQL = {
+exports.userSQL = {
   newUser: sql("../sql/newUser.sql"),
   getUser: sql("../sql/getUser.sql"),
   authUser: sql("../sql/authUser.sql"),
 }
 
-export const animalSQL = {
+exports.animalSQL = {
   getAnimal: sql("../sql/getAnimal.sql"),
 }

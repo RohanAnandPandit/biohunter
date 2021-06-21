@@ -1,4 +1,4 @@
-import { userSQL, animalSQL } from "./sql";
+const { userSQL, animalSQL } = require("./sql");
 
 const pgp = require("pg-promise")({});
 // require("dotenv").config();
