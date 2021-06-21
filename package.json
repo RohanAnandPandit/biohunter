@@ -8,6 +8,9 @@
     "scripts": {
       "start": "node backend/src/server.js",
       "heroku-postbuild": "cd frontend && yarn install && yarn run build"
+    },
+    "engines": {
+        "node": "14.x"
     }
   }
   
