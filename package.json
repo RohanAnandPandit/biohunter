@@ -5,7 +5,7 @@
     "dependencies": {
     },
     "scripts": {
-      "start": "cd frontend && yarn install && yarn start",
+      "start": "cd frontend && yarn install && yarn start"
     }
   }
   
