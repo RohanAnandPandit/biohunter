@@ -13,7 +13,9 @@ const app = express();
 
 const publicPath = path.join(__dirname, '..', 'public');
 
-const port = process.env.PORT || 5000;
+// const port = process.env.PORT || 5000;
+
+const port = 5000;
 
 app.use(cors()); // ADDED
 
