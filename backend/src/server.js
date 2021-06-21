@@ -69,6 +69,10 @@ app.get("/animal", async (req, res) => {
    }
  });
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(require(__dirname + '/../../frontend/build/index.html')))
+});
+
 app.listen(port, () => {
    console.log('Server is up!');
 });

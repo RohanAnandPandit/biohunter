@@ -6,7 +6,8 @@
     "dependencies": {
     },
     "scripts": {
-      "start": "cd frontend && yarn install && yarn start"
+      "start": "node backend/src/server.js",
+      "heroku-postbuild": "cd frontend && yarn install && yarn run build"
     }
   }
   
