@@ -5,9 +5,7 @@ const express = require('express');
 const cors = require('cors'); // ADDED
 const bodyParser = require('body-parser'); // ADDED
 const bcrypt = require("bcrypt");
-const cookieParser = require("cookie-parser");
 
-app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname+'/../../frontend/build')));
 
